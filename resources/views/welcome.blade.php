@@ -53,7 +53,7 @@
                                         <a href="{{ url('cennik') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Cennik</a>
                                     </li>
                                     <li class="nav-item" style="margin-top: 15px;">
-                                        <a href="{{ url('kontakt') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">kontakt</a>
+                                        <a href="{{ url('kontakt') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Kontakt</a>
                                     </li>
                                     <li class="nav-item mr-3">
                                         <a class="btn btn-primary btn-lg" href="{{ route('login') }}">Zaloguj</a>
@@ -91,7 +91,7 @@
             <p style="margin-top: 30px;">Jesteśmy doświadczonymi dentystami z bardzo dobrą renomą oraz opinią na rynku. U nas będziesz mógł skorzystać z usług stomatologicznych, chirurgii stomatologicznej, protetyki oraz profilaktyki dla dzieci, młodzieży oraz dorosłych.</p>
             <p style="margin-top: 30px;">Razem ze startem naszej strony internetowej która jest naszą świetną wizytówką, wprowadzamy możliwość posiadania konta społecznościowego. Logując się będziesz mógł bez kolejek rejestrować się na dowolną wizytę a także posiadać w jednym miejscu zarezerwowane wizyty.</p>
             <p style="margin-top: 50px;">Nie czekaj! kliknij poniżej aby się zarejestrować!</p>
-            <a class="btn btn-warning btn-lg" href="#">Formularz rejestracji &raquo;</a>
+            <a class="btn btn-warning btn-lg" href="{{ route('register') }}">Formularz rejestracji &raquo;</a>
         </div>
         <div class="col-md-4 mb-5 text-xl-center">
             <h2>Godziny otwarcia</h2>
