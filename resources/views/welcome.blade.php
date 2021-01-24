@@ -50,7 +50,7 @@
                                     </li>
                                 @else
                                     <li class="nav-item" style="margin-top: 15px;">
-                                        <a href="{{ url('o-nas') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Cennik</a>
+                                        <a href="{{ url('cennik') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Cennik</a>
                                     </li>
                                     <li class="nav-item" style="margin-top: 15px;">
                                         <a href="{{ url('kontakt') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">kontakt</a>
