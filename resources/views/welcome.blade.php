@@ -69,21 +69,92 @@
                     </div>
                 </div>
             </nav>
-            <div class="row" style="height: 800px; width: 110%; background-color: #3490dc;">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{ asset('img/dent.jpg') }}" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
-                        </div>
-                    </div>
-                </div>
+<!-- Header -->
+<header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">Gabinet dentystyczny DENTAL</h1>
+                <p class="lead mb-7 text-white-10 pt-4">Witamy na stronie internetowej naszego gabinetu. U nas będziesz mógł zarejestrować się na wizytę online za jednym kliknięciem, bez długich kolejek!</p>
             </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row pt-4">
+        <div class="col-md-8 mb-5">
+            <h2>Co oferujemy?</h2>
+            <hr>
+            <p style="margin-top: 30px;">Jesteśmy doświadczonymi dentystami z bardzo dobrą renomą oraz opinią na rynku. U nas będziesz mógł skorzystać z usług stomatologicznych, chirurgii stomatologicznej, protetyki oraz profilaktyki dla dzieci, młodzieży oraz dorosłych.</p>
+            <p style="margin-top: 30px;">Razem ze startem naszej strony internetowej która jest naszą świetną wizytówką, wprowadzamy możliwość posiadania konta społecznościowego. Logując się będziesz mógł bez kolejek rejestrować się na dowolną wizytę a także posiadać w jednym miejscu zarezerwowane wizyty.</p>
+            <p style="margin-top: 50px;">Nie czekaj! kliknij poniżej aby się zarejestrować!</p>
+            <a class="btn btn-warning btn-lg" href="#">Formularz rejestracji &raquo;</a>
+        </div>
+        <div class="col-md-4 mb-5 text-xl-center">
+            <h2>Godziny otwarcia</h2>
+            <hr>
+            <p style="margin-top: 60px;">Poniedziałek 10:00 - 18:00</p>
+            <p>Wtorek 10:00 - 18:00</p>
+            <p>Środa 10:00 - 18:00</p>
+            <p>Czwartek 10:00 - 18:00</p>
+            <p>Piątek 10:00 - 18:00</p>
+            <p>Sobota 10:00 - 18:00</p>
+            <p>Niedziela 10:00 - 18:00</p>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row pt-4">
+        <header>
+            <div class="col-md-12 mb-5">
+                <h2>Co nas wyróżnia?</h2>
+                <hr>
+            </div>
+        </header>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{ asset('img/team.jpg') }}" alt="team">
+                <div class="card-body">
+                    <h4 class="card-title">WYKWALIFIKOWANI SPECJALIŚCI</h4>
+                    <p class="card-text">Zatrudniamy najlepszych specjalistów, dzięki którym jakość naszych usług jest na wyższym poziomie</div>
+
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{ asset('img/sprzet.jpg') }}" alt="sprzet">
+                <div class="card-body">
+                    <h4 class="card-title">NOWOCZESNY SPRZĘT</h4>
+                    <p class="card-text">Używamy najwyższej klasy sprzętu medycznego</div>
+
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{ asset('img/atmosfera.jpg') }}" alt="atmosfera">
+                <div class="card-body">
+                    <h4 class="card-title">MIŁA ATMOSFERA</h4>
+                    <p class="card-text">Zadbamy o to, aby każdy Pacjent czuł się u nas swobodnie i komfortowo</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Dental&copy; 2021 - nowoczesny gabinet stomatologiczny  </p>
+    </div>
+    <!-- /.container -->
+</footer>
+
 </body>
 </html>
 
