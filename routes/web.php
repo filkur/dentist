@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/cennik', 'PriceListController@index')->name('cennik');
+Route::get('/cennik', 'PriceListController@index')->name('price');
 
 Route::get('/kontakt', 'ContactController@index')->name('contact');
 
