@@ -80,61 +80,61 @@
         <thead>
         <tr>
             <th scope="col">Nazwa</th>
-            <th scope="col">Cena</th>
+            <th scope="col">Cena [zł]</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="row">Borowanie</th>
-            <td>1700</td>
+            <th scope="row">Badanie stomatologiczne</th>
+            <td>100</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Konsultacja/plan leczenia</th>
+            <td>100</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Wypełnienie w zębie mlecznym</th>
+            <td>150</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Skaling + piaskowanie + fluoryzacja</th>
+            <td>Od 250</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Korona porcelanowa na podbudowie metalowej</th>
+            <td>800</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Proteza szkieletowa</th>
+            <td>1800</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Wybielanie zębów nakładkowe</th>
+            <td>1100</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Wybielanie zębów lampą Beyond</th>
+            <td>1200</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Usunięcie złamanego narzędzia</th>
+            <td>400</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Ekstrakcja zęba</th>
+            <td>200</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Leczenie zęba (wiercenie)</th>
+            <td>160</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Leczenie kanałowe</th>
+            <td>500</td>
         </tr>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">Czyszczenie kamienia</th>
+            <td>100</td>
         </tr>
         </tbody>
     </table>

@@ -78,47 +78,41 @@
             </header>
             <div class="row mt-5">
                 <div class="col-4">
-                    <section>
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #1</h5>
                             </header>
-                            <p>Monika</p>
+                            <p style="margin-top: 40px;">Monika</p>
                             <p>Kowalska</p>
                             <p>Tel: 111-222-333</p>
                             <p>Email: rejestracja1@dental.com</p>
                         </article>
-                    </section>
                 </div>
                 <div class="col-4">
-                    <section>
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #2</h5>
                             </header>
-                            <p>Andrzej</p>
+                            <p style="margin-top: 40px;">Andrzej</p>
                             <p>Nowak</p>
                             <p>Tel: 123-456-789</p>
                             <p>Email: rejestracja2@dental.com</p>
                         </article>
-                    </section>
                 </div>
                 <div class="col-4">
-                    <section>
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #3</h5>
                             </header>
-                            <p>Angelika</p>
+                            <p style="margin-top: 40px;">Angelika</p>
                             <p>Kolonowicz</p>
                             <p>Tel: 333-222-111</p>
                             <p>Email: rejestracja3@dental.com</p>
                         </article>
-                    </section>
                 </div>
 
             </div>
-            <div class ="row">
+            <div class ="row pt-4">
                 <section>
                     <header>
                         <h4>Masz pytanie? napisz do nas!</h4>
