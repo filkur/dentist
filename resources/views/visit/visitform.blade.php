@@ -3,12 +3,12 @@
 @section('content')
 @if(Auth::check())
     <div class="container">
-        <form action='visitform' method='post'>
+        <form action='/wizyta' method='post'>
             @csrf
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header p-4 bg-primary text-light"><h4>{{ __('Szukaj przelotu:') }}</h4></div><div class="card-body">
+                        <div class="card-header p-4 bg-primary text-light"><h4>{{ __('Zarezerwuj wizytę:') }}</h4></div><div class="card-body">
                             <div class="row">
                                 <div class="col-md-3 mb-4 mt-1">
                                     <label for="dentist" class="ml-4">Specjalista: </label>
