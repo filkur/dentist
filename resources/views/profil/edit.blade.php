@@ -5,7 +5,7 @@
     @if(Auth::check())
         <div class="container">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-primary text-light">
                     <h3>Edytuj profil:</h3>
                 </div>
                 <form method="post" action="/profil">
@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="col mt-4">
-                            <button type="submit" class="btn btn-dark" name="delete" value="delete">Usuń konto</button>
+                            <button type="submit" class="btn btn-warning" name="delete" value="delete">Usuń konto</button>
                         </div>
                     </div>
 
