@@ -52,7 +52,7 @@
                                     </select>
                                 </div>
                                 <div class="col-12 ">
-                                    <button type="submit" class="btn btn-primary" name="szukaj">Szukaj</button>
+                                    <button type="submit" class="btn btn-primary btn-md" name="Rezerwuj">Rezerwuj</button>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header p-4 bg-primary text-light"><h4>{{ __('Witaj '.Auth::user()->name.'! Oto nasz szybkie menu:') }}</h4></div>
+                    <div class="card-header p-4 bg-primary text-light"><h4>{{ __('Hej '.Auth::user()->name.'! Oto nasz szybkie menu:') }}</h4></div>
 
                     <div class="card-body">
                         @if (session('status'))
