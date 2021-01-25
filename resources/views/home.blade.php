@@ -20,7 +20,7 @@
                                         <h2 class="card-title">Zarezerwuj nową wizyte</h2>
                                     </div>
                                     <div class="card-footer">
-                                        <a href="{{url('#')}}" class="btn btn-primary btn-md">Przejdź do formularza</a>
+                                        <a href="{{route('visitform')}}" class="btn btn-primary btn-md">Przejdź do formularza</a>
                                     </div>
                                 </div>
                             </div>

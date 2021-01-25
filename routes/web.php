@@ -34,3 +34,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profil', 'ProfilController@index')->name('edit');
 
 Route::post('/profil', 'ProfilController@store');
+
+Route::get('/wizyta', 'VisitController@index')->name('visitform');

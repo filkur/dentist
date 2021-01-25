@@ -57,14 +57,14 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href={{url('#')}}>
-                                    {{__('Kup bilet')}}
+                                <a class="dropdown-item" href={{route('visitform')}}>
+                                    {{__('Zarezerwuj')}}
                                 </a>
                                 <a class="dropdown-item" href="{{url('#')}}">
                                     {{__('Historia')}}
                                 </a>
 
-                                <a class="dropdown-item" href="{{url('#')}}">
+                                <a class="dropdown-item" href="{{route('edit')}}">
                                     {{__('Edycja')}}
                                 </a>
                                 <a class="dropdown-item" href="{{ url('#') }}"
