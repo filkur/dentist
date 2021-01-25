@@ -26,3 +26,7 @@ Route::get('/cennik', 'PriceListController@index')->name('price');
 Route::get('/kontakt', 'ContactController@index')->name('contact');
 
 Route::post('/kontakt', 'ContactController@index')->name('contact');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

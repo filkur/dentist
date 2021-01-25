@@ -21,7 +21,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
     <div class="container">
         @if (Auth::check())
-            <a class="navbar-brand" href="{{url('home')}}">
+            <a class="navbar-brand" href="{{url('/')}}">
                 <img src="{{ asset('img/logo.png') }}" alt="logo" >
             </a>
         @else
@@ -45,6 +45,12 @@
                 <!-- Authentication Links -->
                 @if (Route::has('login'))
                     @auth
+                        <li class="nav-item">
+                            <a href="{{ route('price') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Cennik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('contact') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">Kontakt</a>
+                        </li>
                         <li class="nav-item">
                             <a href="{{ url('home') }}" style="text-decoration: none; margin-right: 50px; font-size: 25px">przejdź do serwisu</a>
                         </li>

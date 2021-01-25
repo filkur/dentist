@@ -57,17 +57,17 @@
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href={{route('buyticket')}}>
+                                <a class="dropdown-item" href={{url('#')}}>
                                     {{__('Kup bilet')}}
                                 </a>
-                                <a class="dropdown-item" href="{{route('history')}}">
+                                <a class="dropdown-item" href="{{url('#')}}">
                                     {{__('Historia')}}
                                 </a>
 
-                                <a class="dropdown-item" href="{{route('edit')}}">
+                                <a class="dropdown-item" href="{{url('#')}}">
                                     {{__('Edycja')}}
                                 </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                <a class="dropdown-item" href="{{ url('#') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Wyloguj') }}
