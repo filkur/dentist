@@ -19,13 +19,16 @@
 
             <div class="card-body">
                 @if($visits != null)
-                    @foreach($visits as $ticket)
+                    @foreach($visits as $visit)
                         <div class="row mt-4 border-bottom pl-4">
-                            @foreach($ticket as $item => $key)
+                            @foreach($visit as $item => $key)
                                 <div class="col"><h4>{{$key}}</h4></div>
                             @endforeach
+                                <form action="/historia/{{\Illuminate\Support\Facades\Auth::id()}}/{{$visit -> id}}" method="post">
+                                    @csrf
+                                    <a href="{{route('historyDes', ['userId'=>Auth::id(),'visitId'=>$visit -> id])}}" class="btn btn-primary btn-sm" >Anuluj</a>
+                                </form>
                         </div>
-                        
                     @endforeach
                 @else
                     Nie zakupiono jeszcze żadnego biletu

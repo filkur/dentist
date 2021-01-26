@@ -40,3 +40,5 @@ Route::get('/wizyta', 'VisitController@index')->name('visitform');
 Route::post('/potwierdz', 'VisitController@store');
 
 Route::get('/historia/{userId}', 'VisitController@show')->name('history');
+
+Route::get('/historia/{userId}/{visitId}', 'VisitController@destroy')->name('historyDes');

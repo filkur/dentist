@@ -8,7 +8,7 @@
                 <div class="card-header bg-primary text-light"><h3>Dokonano rezerwacji wizyty.</h3></div>
                 <div class="card-body">
                     <p>Kliknij w przycisk poniżej i sprawdź w swojej historii wizyt czy nowa została dodana!</p>
-                    <a href="{{url('#')}}" class="btn btn-warning btn-md">Przejdź do historii</a>
+                    <a href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}" class="btn btn-warning btn-md">Przejdź do historii</a>
                 </div>
             </div>
         </div>
