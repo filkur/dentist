@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header p-4 bg-primary text-light text-xl-center"><h4>{{ __('Witaj '.Auth::user()->name.' na naszej stronie! Dzisiaj jest '. date('m/d/Y')) }}</h4></div>
+                    <div class="card-header p-4 bg-primary text-light text-xl-center"><h4>{{ __('Witaj '.Auth::user()->name.' na naszej stronie! Szybkie menu:}}</h4></div>
                     </div>
                 </div>
                 <div class="row pt-4">

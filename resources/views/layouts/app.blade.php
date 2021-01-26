@@ -58,7 +58,7 @@
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
                                 <a class="dropdown-item" href={{route('visitform')}}>
-                                    {{__('Zarezerwuj')}}
+                                    {{__('Rezerwuj')}}
                                 </a>
                                 <a class="dropdown-item" href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}">
                                     {{__('Historia')}}
