@@ -19,7 +19,6 @@
             </div>
 
             <div class="card-body">
-                @if($visits != null)
                     @foreach($visits as $visit)
                         <div class="row mt-4 border-bottom pl-4">
                             @foreach($visit as $item => $key)
@@ -31,9 +30,6 @@
                                 </form>
                         </div>
                     @endforeach
-                @else
-                    Nie zakupiono jeszcze żadnego biletu
-                @endif
             </div>
         </div>
     </div>
