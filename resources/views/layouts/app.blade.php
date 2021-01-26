@@ -60,7 +60,7 @@
                                 <a class="dropdown-item" href={{route('visitform')}}>
                                     {{__('Zarezerwuj')}}
                                 </a>
-                                <a class="dropdown-item" href="{{url('#')}}">
+                                <a class="dropdown-item" href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}">
                                     {{__('Historia')}}
                                 </a>
 

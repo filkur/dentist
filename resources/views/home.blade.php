@@ -36,7 +36,7 @@
                                     <div class="carousel-caption d-none d-md-block" style="font-family: Bahnschrift;">
                                         <h2>Zobacz historie rezerwacji</h2>
                                         <p>Nie pamiętasz kiedy masz wizyte? Żaden problem! Wciśnij przycisk i zobacz kiedy masz wizytę</p>
-                                        <a href="{{route('visitform')}}" class="btn btn-warning btn-lg">Przejdź do historii</a>
+                                        <a href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}" class="btn btn-warning btn-lg">Przejdź do historii</a>
                                     </div>
 
                                 </div>

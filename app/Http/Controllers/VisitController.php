@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use phpDocumentor\Reflection\DocBlock\Tags\Version;
 
@@ -59,6 +60,7 @@ class VisitController extends Controller
         //sprawdzenie czy jest wizyta jest zajeta i dodanie jej do bazy danych
         if (empty($visit))
             DB::table('visits')->insert([
+                'user_id' => Auth::id(),
                'specialist' => $specialist,
                 'type' => $type,
                 'visitDate' => $visitDate,
@@ -76,7 +78,29 @@ class VisitController extends Controller
      */
     public function show($id)
     {
-        //
+        $visitsID = DB::table('visits')
+            ->where('user_id', Auth::id())
+            ->get('ticket_id');
+
+        $arrayVisitsId = [];
+        foreach ($visitsID as $visitId)
+        {
+            foreach ($visitId as $item => $key)
+            {
+                array_push($arrayVisitsId, $key);
+            }
+        }
+
+        $arrayVisits = [];
+
+        for ($i=0; $i<count($arrayVisitsId); $i++){
+            $arrayVisits[$i] = DB::table('visits')
+                ->where('id', $arrayVisitsId[$i])
+                ->first();
+        }
+
+
+        return view('history', ["tickets" => $arrayVisits]);
     }
 
     /**
