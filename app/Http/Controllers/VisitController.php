@@ -78,7 +78,7 @@ class VisitController extends Controller
      */
     public function show($id)
     {
-        $visitsID = DB::table('visits')
+        /*$visitsID = DB::table('visits')
             ->where('user_id', Auth::id())
             ->get('ticket_id');
 
@@ -97,10 +97,12 @@ class VisitController extends Controller
             $arrayVisits[$i] = DB::table('visits')
                 ->where('id', $arrayVisitsId[$i])
                 ->first();
-        }
+        }*/
 
+        $visits = DB::table('visits')
+            ->where('user_id', $id) -> get();
 
-        return view('history', ["tickets" => $arrayVisits]);
+        return view('history', ["visits" => $visits]);
     }
 
     /**
