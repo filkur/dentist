@@ -36,3 +36,5 @@ Route::get('/profil', 'ProfilController@index')->name('edit');
 Route::post('/profil', 'ProfilController@store');
 
 Route::get('/wizyta', 'VisitController@index')->name('visitform');
+
+Route::post('/potwierdz', 'VisitController@store');

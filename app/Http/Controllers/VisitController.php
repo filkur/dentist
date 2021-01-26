@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use phpDocumentor\Reflection\DocBlock\Tags\Version;
 
 class VisitController extends Controller
 {
@@ -34,7 +36,36 @@ class VisitController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //walidacja danych
+        $request->validate([
+            'specialist' => 'required',
+            'type' => 'required',
+            'visitDate' => 'required',
+            'visitHour' => 'required',
+
+        ]);
+
+        $specialist = $request['specialist'];
+        $type = $request['type'];
+        $visitDate =  $request['visitDate'];
+        $visitHour = $request['visitHour'];
+
+        $visit = DB::table('visits')
+            ->where('specialist', "$specialist")
+            ->where('visitDate', "$visitDate")
+            ->where('visitHour', "$visitHour")
+            ->first();
+
+        //sprawdzenie czy jest wizyta jest zajeta i dodanie jej do bazy danych
+        if (empty($visit))
+            DB::table('visits')->insert([
+               'specialist' => $specialist,
+                'type' => $type,
+                'visitDate' => $visitDate,
+                'visitHour' => $visitHour
+            ]);
+
+        return view('posts.search', ["visit" => $visit]);
     }
 
     /**

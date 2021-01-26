@@ -3,7 +3,7 @@
 @section('content')
 @if(Auth::check())
     <div class="container">
-        <form action='/wizyta' method='post'>
+        <form action='/potwierdz' method='post'>
             @csrf
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -11,8 +11,8 @@
                         <div class="card-header p-4 bg-primary text-light"><h4>{{ __('Zarezerwuj wizytę:') }}</h4></div><div class="card-body">
                             <div class="row">
                                 <div class="col-md-3 mb-4 mt-1">
-                                    <label for="dentist" class="ml-4">Specjalista: </label>
-                                    <select id="dentist" name="dentist" class="form-control">
+                                    <label for="specialist" class="ml-4">Specjalista: </label>
+                                    <select id="specialist" name="specialist" class="form-control">
                                         <option value="Kowalski">Kowalski Jan</option>
                                         <option value="Nowak">Nowak Agnieszka</option>
                                         <option value="Wisniewski">Wisniewski Przemyslaw</option>
@@ -27,13 +27,13 @@
                                     </select>
                                 </div>
                                 <div class="col-md-3 mb-4">
-                                    <label for="start" class="mt-1">Dzień wizyty:</label> <br/>
-                                    <input type="date" id="start" name="start"
+                                    <label for="visitDate" class="mt-1">Dzień wizyty:</label> <br/>
+                                    <input type="date" id="visitDate" name="visitDate"
                                            value="{{date('Y-m-d')}}" min="{{date('Y-m-d')}}" class="w-100 h-50">
                                 </div>
                                 <div class="col-md-3 mb-4 mt-1">
-                                    <label for="hour" class="ml-4">Godzina wizyty:</label>
-                                    <select id="hour" name="hour" class="form-control">
+                                    <label for="visitHour" class="ml-4">Godzina wizyty:</label>
+                                    <select id="visitHour" name="visitHour" class="form-control">
                                         <option value="10:00">10:00</option>
                                         <option value="10:30">10:30</option>
                                         <option value="11:00">11:00</option>
