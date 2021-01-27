@@ -1,15 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
 
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header p-4 bg-primary text-light text-xl-center"><h4>{{ __('Witaj '.Auth::user()->name.' na naszej stronie! Szybkie menu:}}</h4></div>
-                    </div>
-                </div>
-                <div class="row pt-4">
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-primary text-light"><h3>Szybkie menu:</h3></div>
+            <div class="card-body">
+                <div class="row">
                     <div id="firstContent">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -23,7 +20,7 @@
                                     <div class="carousel-caption d-none d-md-block" style="font-family: Bahnschrift;">
                                         <h2>Zarezerwuj nową wizyte</h2>
                                         <p>Wypróbuj naszą nową funkcjonalnośc i zarezerwuj wizytę za jednym kliknięciem!</p>
-                                        <a href="{{route('visitform')}}" class="btn btn-warning btn-lg">Przejdź do formularza</a>
+                                        <a class="btn btn-warning btn-lg" href="{{ route('visitform') }}">Rezerwuj wizytę</a>
                                     </div>
 
                                 </div>
@@ -32,7 +29,7 @@
                                     <div class="carousel-caption d-none d-md-block" style="font-family: Bahnschrift;">
                                         <h2>Zobacz historie rezerwacji</h2>
                                         <p>Nie pamiętasz kiedy masz wizyte? Żaden problem! Wciśnij przycisk i zobacz kiedy masz wizytę</p>
-                                        <a href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}" class="btn btn-warning btn-lg">Przejdź do historii</a>
+                                        <a class="btn btn-warning btn-lg" href="{{route('history', ['userId' => \Illuminate\Support\Facades\Auth::id()])}}">Zobacz historii</a>
                                     </div>
 
                                 </div>
@@ -41,7 +38,7 @@
                                     <div class="carousel-caption d-none d-md-block" style="font-family: Bahnschrift">
                                         <h2>Edytuj profil</h2>
                                         <p>Nie podoba Ci się Twój nick? a może zmieniłeś e-mail? Żaden kłopot, zmień dane teraz!</p>
-                                        <a href="{{route('edit')}}" class="btn btn-warning btn-lg">Przejdź do edycji profilu</a>
+                                        <a class="btn btn-warning btn-lg" href="{{ route('edit') }}">Przejdź do edycji</a>
                                     </div>
 
                                 </div>
@@ -57,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
     </div>
 
 

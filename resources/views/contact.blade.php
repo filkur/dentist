@@ -83,7 +83,7 @@
                 <h4>Zapraszamy do kontaktu telefonicznego:</h4>
             </header>
             <div class="row mt-5">
-                <div class="col-4">
+                <div class="col-3">
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #1</h5>
@@ -94,7 +94,7 @@
                             <p>Email: rejestracja1@dental.com</p>
                         </article>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-12 col-lg-3 ">
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #2</h5>
@@ -105,7 +105,7 @@
                             <p>Email: rejestracja2@dental.com</p>
                         </article>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                         <article style="margin-left: 25px">
                             <header>
                                 <h5>Rejestracja #3</h5>
