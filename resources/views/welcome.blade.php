@@ -150,6 +150,30 @@
     </div>
     <!-- /.row -->
 
+    <div class="row pt-4">
+        <header>
+            <div class="col-md-12 mb-5">
+                <h2>Nasz zespół</h2>
+                <hr>
+            </div>
+        </header>
+        <div class="col-3 mb-5 bg-primary" style="height: 150px; margin-left: 125px;">
+            <p class="text-light mt-2 font-weight-bolder" style="font-size: 25px;">lek. Kowalski Jan</p>
+            <p class="text-light font-weight-lighter" style="font-size: 20px;">specjalista stomatologii ogólnej</p>
+        </div>
+
+        <div class="col-3 mb-5 bg-primary ml-4" style="height: 150px;">
+            <p class="text-light mt-2 font-weight-bolder" style="font-size: 25px;">lek. Nowak Agnieszka</p>
+            <p class="text-light font-weight-lighter" style="font-size: 20px;">specjalista chirurg</p>
+        </div>
+
+        <div class="col-3 mb-5 bg-primary ml-4" style="height: 150px;">
+            <p class="text-light mt-2 font-weight-bolder" style="font-size: 25px;">lek. Wisniewska Olga</p>
+            <p class="text-light font-weight-lighter" style="font-size: 20px;">specjalista stomatologii rodzinnej</p>
+        </div>
+    </div>
+    <!-- /.row -->
+
 </div>
 <!-- /.container -->
 

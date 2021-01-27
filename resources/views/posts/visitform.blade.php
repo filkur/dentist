@@ -15,8 +15,7 @@
                                     <select id="specialist" name="specialist" class="form-control">
                                         <option value="Kowalski">Kowalski Jan</option>
                                         <option value="Nowak">Nowak Agnieszka</option>
-                                        <option value="Wisniewski">Wisniewski Przemyslaw</option>
-                                        <option value="Kajetanowicz">Kajetanowicz Pawel</option>
+                                        <option value="Wisniewska">Wisniewska Olga</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3 mb-4 mt-1">
